@@ -1,0 +1,15 @@
+[
+ {
+  "doctype": "Custom Field",
+  "name": "Item-custom_carton_size",
+  "dt": "Item",
+  "fieldname": "custom_carton_size",
+  "label": "Carton Size",
+  "fieldtype": "Int",
+  "default": "1",
+  "non_negative": 1,
+  "insert_after": "purchase_uom",
+  "module": "Pharma Smart ERP",
+  "description": "How many Ordering Units (Default Purchase UOM, or Stock UOM if none) are in one carton. Smart PO rounds orders up to full cartons."
+ }
+]

@@ -2,6 +2,19 @@
 
 Pharmacy ERP built on ERPNext
 
+### What is in this app
+
+- **Carton Size** field on every Item (Item form, next to Default Purchase UOM). Meaning: how many ordering units
+  (the Default Purchase UOM, or the Stock UOM if none is set) are in one carton.
+- **Smart PO** screen (search "Smart PO" in the top bar):
+  1. Pick the warehouse, add items with the quantity you need to supply.
+  2. **Calculate Order** checks stock (and optionally open purchase orders), works out the shortfall,
+     rounds it up to full cartons, and picks the cheapest supplier from Item Price (Buying) records that have a Supplier.
+  3. Review or edit supplier, rate and order quantity.
+  4. **Create Purchase Orders** makes one DRAFT Purchase Order per supplier for you to review and submit.
+
+Set up supplier prices first: Item Price, tick Buying, choose the Item, a Supplier, the rate, and the unit the rate is for.
+
 ### Installation
 
 You can install this app using the [bench](https://github.com/frappe/bench) CLI:
